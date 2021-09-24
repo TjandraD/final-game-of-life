@@ -28,10 +28,14 @@ These rules can be concluded as:
 - JUnit 5.0 or higher installed, for running the tests ([see this link for installation](https://junit.org/junit5/docs/current/user-guide/#overview-getting-started-junit-artifacts))
 
 ## How to Build The Program
-TBD
+- Open a terminal
+- Change the working directory into the current project directory
+- Execute `./gradlew build` in your terminal
 
 ## How to Run The Program
 TBD
 
 ## How to Run The Tests
-TBD
+- Open a terminal
+- Change the working directory into the current project directory
+- Execute `./gradlew test` in your terminal
