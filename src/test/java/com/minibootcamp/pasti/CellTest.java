@@ -27,4 +27,15 @@ public class CellTest {
 
         assertTrue(mainCell.isAlive());
     }
+
+    @Test
+    public void isAlive_ReturnTrue_LiveCellWithThreeAliveNeighbour() {
+        Cell mainCell = new Cell(true);
+        Cell aliveNeighbour = new Cell(true);
+        Cell[] neighbourList = {aliveNeighbour, aliveNeighbour, aliveNeighbour};
+
+        mainCell.decideIsAlive(neighbourList);
+
+        assertTrue(mainCell.isAlive());
+    }
 }

@@ -12,6 +12,6 @@ public class Cell {
     }
 
     public void decideIsAlive(Cell[] neighbourList) {
-        isAlive = neighbourList.length == 2;
+        isAlive = neighbourList.length == 2 || neighbourList.length == 3;
     }
 }
