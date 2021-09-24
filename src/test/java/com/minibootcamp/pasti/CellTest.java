@@ -38,4 +38,15 @@ public class CellTest {
 
         assertTrue(mainCell.isAlive());
     }
+
+    @Test
+    public void isAlive_ReturnFalse_DeadCellWithTwoAliveNeighbour() {
+        Cell mainCell = new Cell(false);
+        Cell aliveNeighbour = new Cell(true);
+        Cell[] neighbourList = {aliveNeighbour, aliveNeighbour};
+
+        mainCell.decideIsAlive(neighbourList);
+
+        assertFalse(mainCell.isAlive());
+    }
 }
